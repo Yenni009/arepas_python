@@ -1,0 +1,183 @@
+/* --- CONTENEDOR PRINCIPAL --- */
+.page {
+  min-height: 100vh;
+  background: #f5eee6;
+  padding-top: 110px;
+  font-family: Poppins, sans-serif;
+}
+
+/* --- NAVBAR --- */
+.navbar {
+  width: 100%;
+  background-color: #d6c2ac;
+  padding: 18px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  animation: slideDown 0.6s ease;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-80px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.brand {
+  color: #4a382b;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+/* Botón cerrar sesión */
+.logoutBtn {
+  background-color: #b89571;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+.logoutBtn:hover {
+  background-color: #a17e5f;
+  transform: translateY(-2px);
+}
+
+/* TITULO */
+.title {
+  text-align: center;
+  font-size: 32px;
+  color: #6d4c41;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* --- BUSCADOR --- */
+.searchContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  background: #f8f3ec;
+  border: 2px solid #d6c2ac;
+  padding: 10px 18px;
+  border-radius: 50px;
+  width: 70%;
+  max-width: 520px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(90, 64, 50, 0.1);
+}
+
+.searchBox:hover {
+  border-color: #b89571; 
+  box-shadow: 0 5px 14px rgba(90, 64, 50, 0.15);
+}
+
+.icon {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #5e4a3c;
+}
+
+.input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: transparent;
+  color: #4a382b;
+}
+
+.input::placeholder {
+  color: #8a7665;
+}
+
+.btnBuscar {
+  background: #e7d5c4;
+  border: 2px solid #c9b5a2;
+  padding: 7px 18px;
+  border-radius: 40px;
+  color: #4a3e32;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.btnBuscar:hover {
+  background: #d6c2ac;
+  border-color: #b89571;
+  transform: scale(1.05);
+}
+
+/* --- LISTA DE USUARIOS --- */
+.userList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+/* CARD */
+.card {
+  width: 420px;
+  background: white;
+  padding: 18px 22px;
+  border-radius: 16px;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.12);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.userInfo {
+  color: #4a382b;
+  font-size: 16px;
+}
+
+/* Botón eliminar */
+.deleteBtn {
+  background: #d7b49e;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.deleteBtn:hover {
+  background: #b89571;
+  transform: scale(1.07);
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 40px;
+  padding: 20px 0;
+  text-align: center;
+  color: #6a5041;
+}
+ 
